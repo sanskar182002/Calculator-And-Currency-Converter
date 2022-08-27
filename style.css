@@ -1,0 +1,221 @@
+*{margin: 0px; padding: 0px; border: 0px; font-family: 'Open Sans', sans-serif;}
+
+body {
+    background-color: rgb(147, 40, 229);
+    transition: 0.2s;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin-left: 40%;
+    margin-top: 100px;
+    color: white;
+    font-weight: 700;
+    color: #FF9300;
+    transition: 0.2s;
+}
+
+.result-C {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 350px;
+    margin-left: 40%;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+input {
+    padding: 23px 30.5px;
+    text-align: right;
+    font-size: 17px;
+    border-radius: 2px;
+    transition: 0.2s;
+    color: rgb(134, 131, 131, 0.7);
+    border-radius: 4px;
+}
+
+.clear-btn {
+    padding: 25px 36.3px;
+    font-size: 15px;   
+    background-color: #FF0000; 
+    color: whitesmoke;  
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 40%;
+    width: 350px;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 25px 35px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.buttons .btn {
+    transition: 0.2s;
+}
+
+.buttons .btn:hover {
+    background-color: #FF8243;
+    color: white;
+}
+
+.buttons .equal-btn:hover {
+    background-color: green;
+}
+
+.divide-btn {
+    padding: 25px 33.3px;
+    font-size: 17px;
+}
+
+.multiply-btn {
+    padding: 25px 35.5px;
+}
+
+.dot-btn {
+    padding: 25px 38px;
+}
+
+.minus-btn {
+    font-size: 25px;
+    padding: 25px 36.5px;
+}
+
+.toggle {
+    margin-left: 40%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.Reset {
+    margin-left: 538px;
+    padding: 10px 40px;
+    transition: 0.2s;
+    margin-top: -15px;
+}
+
+.Reset:hover {
+    background-color: crimson;
+}
+
+.wrapper {
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 15px;
+    width: 370px;
+    margin-top: 150px;
+    margin-left: -200px;
+    height: 380px;
+}
+
+.wrapper header{
+    font-size: 28px;
+    text-align: center;
+}
+
+.wrapper form{
+    margin-top: 20px 0 20px 0;
+}
+
+form :where(input, button){
+    width: 305px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+form input {
+    border: 1px solid rgb(175, 174, 174);
+    height: 50px;
+    padding: 0 30px;
+    font-size: 17px;
+}
+
+form input:focus{
+    padding: 0 29px;
+    border: 2px solid #675afe;
+}
+
+form .drop-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    flex-wrap: nowrap;
+    height: 150px;
+    /* border: 1px solid blue; */
+}
+
+form .drop-list .icon{
+    align-self: center;
+    /* border: 1px solid blue; */
+    padding: 15px;
+    cursor: pointer;
+}
+
+.drop-list .select-box{
+    display: flex;
+    width: 150px;
+    margin-left: 0px;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    height: 30%;
+}
+
+.select-box img{
+    max-width: 33px;
+    max-height: 30px;
+    margin-bottom: 10px;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+    margin-left: -200px;
+}
+
+form button{
+    height: 52px;
+    margin-left: -180px;
+    margin-top: -30px;
+    color: #fff;
+    background: #675afe;
+    cursor: pointer;
+}
+
+form button:hover{
+    box-shadow: 20px outside black;
+}
+/* Dark mode */
+
+.dark {
+    background-color: black;
+}
+
+.dark .btn, .dark input {
+    background-color: rgb(255,255,255,0.2);
+    color: rgb(210, 210, 210);
+}
+
+.dark .wrapper {
+    background-color: rgb(255,255,255, 0.2);
+    color: rgb(210, 210, 210);
+}

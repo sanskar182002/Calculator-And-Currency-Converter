@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <section class="calculator">
+
+        <h1>Calculator</h1>
+        <div class="result-C">
+            <input type="text" value="Input">
+            <button class="clear-btn" value="C">C</button>
+        </div>
+        <div class="buttons">
+            <button class="one-btn btn num" value = "1">1</button>
+            <button class="two-btn btn num" value = "2">2</button>
+            <button class="three-btn btn num" value = "3">3</button>
+            <button class="equal-btn btn" value = "=">=</button>
+            <button class="four-btn btn num" value = "4">4</button>
+            <button class="five-btn btn num" value = "5">5</button>
+            <button class="six-btn btn num" value = "6">6</button>
+            <button class="divide-btn btn" value = "/"><i class="fas fa-divide"></i></button>
+            <button class="seven-btn btn num" value = "7">7</button>
+            <button class="eight-btn btn num" value = "8">8</button>
+            <button class="nine-btn btn num" value = "9">9</button>
+            <button class="multiply-btn btn" value = "x">x</button>
+            <button class="dot-btn btn num" value = ".">.</button>
+            <button class="zero-btn btn num" value = "0">0</button>
+            <button class="minus-btn btn" value = "-">-</button>
+            <button class="plus-btn btn" value = "+">+</button>
+        </div>
+        <button class="toggle btn">Light Mode</button>
+        <button class="Reset btn">Reset</button>
+    </section>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://countryflagsapi.com/png/us" alt="flag" width="33" height="22">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://countryflagsapi.com/png/in" alt="flag" width="33" height="22">
+                        <select></select>
+                    </div>
+                    <div class="exchange-rate">Getting Exchange Rates ....</div>
+                    <button>Get Exchange Rate</button>
+                </div>
+            </div>
+            </form>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
